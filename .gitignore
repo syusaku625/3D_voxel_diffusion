@@ -1,0 +1,6 @@
+*.vtu
+*.dat
+*.out
+.vscode
+bin
+build

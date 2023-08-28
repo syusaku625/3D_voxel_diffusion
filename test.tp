@@ -1,0 +1,46 @@
+Geometry
+{
+  base_dir = "input_geometry_2"
+  node_file = "node.dat"
+  element_file = "element_and_type.dat"
+  elementType = "elementType.dat"
+}
+
+Condition
+{
+  dt = 1e-2
+  computational_time = 360
+  fluid_diffusion_coefficient = 1e-2
+  solid_diffusion_coefficient = 1e-5
+}
+
+WhiteMatter
+{
+  vessel = 0.01
+  solid = 0.89
+  fluid = 1.0
+}
+
+GreyMatter
+{
+  vessel = 0.05
+  solid = 0.8
+  fluid = 1.0
+}
+
+CSF
+{
+  vessel = 0.01
+  solid = 0.0
+  fluid = 0.99
+}
+
+Coupling_coefficient
+{
+  coupling_coefficient_vc = 1.0e-3
+  coupling_coefficient_cv = 3.0e-4
+  coupling_coefficient_ci = 2.0e-3
+  coupling_coefficient_ic = 2.9e-1
+  coupling_coefficient_vi = 7.4e-4
+  coupling_coefficient_iv = 3.8e-4
+}
